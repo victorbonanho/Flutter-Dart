@@ -1,0 +1,3 @@
+flutter create name_of_the_project
+delete the web folder if it is not for web
+run 'flutter packages get' to ensure that get pubspec.yaml file
