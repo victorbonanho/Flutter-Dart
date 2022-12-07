@@ -1,3 +1,30 @@
 flutter create name_of_the_project
 delete the web folder if it is not for web
 run 'flutter packages get' to ensure that get pubspec.yaml file
+
+Fast review:
+class Person {
+  String name = 'Max';
+  int age = 30;
+}
+
+double addNumbers(int num1, double num2) {
+  //print(num1 + num2);
+  return num1 + num2;
+}
+
+void main() {
+  var p1 = Person(); //Object without the new
+  print("The p1 is ${p1}");
+  print("The p1 name is ${p1.name}");
+  var p2 = Person();
+  p2.name = 'Manu';
+  print(p2.name);
+  print(addNumbers(1, 2.6));
+  var firstResult = addNumbers(1, 2.6);
+  double secondResult;
+  secondResult = addNumbers(5,5);
+  print('Hello!');
+  print(firstResult);
+  print(secondResult);
+}
