@@ -1,14 +1,15 @@
 //Flutter is a bunch of widgets
 
-// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors
-
 import 'package:flutter/material.dart';
 
 void main() {}
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key key}) : super(key: key);
+
+  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: Text('Hello'),
     );
   }
