@@ -28,3 +28,31 @@ void main() {
   print(firstResult);
   print(secondResult);
 }
+
+
+----------------------------------------------------------------
+with constructors
+
+class Person {
+  String? name;
+  int? age;
+  
+//   Person({String? inputName, int? age}) {
+//     name = inputName;
+//     this.age = age;
+//   }
+  
+//Better way
+    Person({this.name, this.age});
+
+    Person.veryOld(this.name) {
+      age = 60;
+    }
+}
+
+void main() {
+  //Named arguments does not matter the positin
+  var p1 = Person(age: 22, name: 'Max');
+  print("The name is ${p1.name} and the age is ${p1.age}");
+  var p3 = Person.veryOld('Max'); //60 years by default
+}
